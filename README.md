@@ -168,29 +168,4 @@ with `EncodeForOutput`.
 
 ---
 
-## Grading checklist (self-assessment against the assignment rubric)
 
-- [x] **GitHub repository** — push this whole folder to a new public repo (see steps below).
-- [x] **Secure code for input validation & SQL injection prevention** —
-      `Services/InputValidator.cs`, parameterized queries in `Data/*.cs`.
-- [x] **Authentication & authorization incl. RBAC** — cookie auth +
-      `RequireRole("Admin")` policy in `Program.cs` / `Endpoints/VaultEndpoints.cs`.
-- [x] **Debugged & resolved vulnerabilities (SQL injection, XSS)** — see the
-      "Security summary" section above and the BEFORE/AFTER comments in
-      `Data/SqliteUserRepository.cs`.
-- [x] **Tests generated & executed to verify security** —
-      `tests/SafeVault.Tests/*.cs`, run with `dotnet test`.
-- [x] **Summary of vulnerabilities, fixes, and Copilot's role** — this README.
-
-## Publishing to GitHub (Step 2 of the assignment)
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/<your-username>/safevault.git
-git push -u origin main
-```
-
-Then copy the repository URL for your submission.
